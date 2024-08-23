@@ -228,7 +228,7 @@ textarea {
 
 .social-list-mobile {
   display: flex;
-  justify-content: space-between;
+  gap: 40px;
 }
 .social-list-mobile-item {
   width: 40px;
