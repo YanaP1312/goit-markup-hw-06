@@ -328,7 +328,7 @@ textarea {
 .advantages-list {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 72px;
 }
 
 .visually-hidden {
@@ -488,6 +488,12 @@ textarea {
 .footer-info {
   color: #f4f4fd;
   max-width: 100%;
+}
+
+.footer-info .text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  font-weight: 400;
 }
 
 .logo .logo-footer {
@@ -864,6 +870,16 @@ textarea {
   .advantages-icon {
     display: none;
     flex-wrap: wrap;
+  }
+
+  .advantages-list-item .title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+  }
+
+  .advantages-list-item .text {
+    font-weight: 500;
   }
 
   .container-footer {
