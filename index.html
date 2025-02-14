@@ -37,13 +37,13 @@
           >
           <ul class="menu-list">
             <li class="menu-list-item">
-              <a href="#studio" target="_blank" class="link current">Studio</a>
+              <a href="#studio" class="link current">Studio</a>
             </li>
             <li class="menu-list-item">
-              <a href="#portfolio" target="_blank" class="link">Portfolio</a>
+              <a href="#portfolio" class="link">Portfolio</a>
             </li>
             <li class="menu-list-item">
-              <a href="#footer" target="_blank" class="link">Contacts</a>
+              <a href="#footer" class="link">Contacts</a>
             </li>
           </ul>
         </nav>
@@ -87,13 +87,13 @@
       <div class="mobile-menu-wrap">
         <ul class="menu-list-mobile">
           <li class="menu-list-mobile-item">
-            <a href="#studio" target="_blank" class="link current">Studio</a>
+            <a href="#studio" class="link current">Studio</a>
           </li>
           <li class="menu-list-mobile-item">
-            <a href="#portfolio" target="_blank" class="link">Portfolio</a>
+            <a href="#portfolio" class="link">Portfolio</a>
           </li>
           <li class="menu-list-mobile-item">
-            <a href="#footer" target="_blank" class="link">Contacts</a>
+            <a href="#footer" class="link">Contacts</a>
           </li>
         </ul>
         <ul class="address-list-mobile">
@@ -906,6 +906,9 @@
                 name="user-tel"
                 id="user-tel"
                 required
+                pattern="[0-9+()-\s]*"
+                inputmode="numeric"
+                oninput="this.value = this.value.replace(/[^0-9+()-\s]/g, '')"
               />
               <svg
                 class="review-form-icon"
@@ -977,5 +980,6 @@
         </form>
       </div>
     </div>
+    <script src="./common.js"></script>
   </body>
 </html>
